@@ -1,0 +1,16 @@
+{
+  "company": "Компания",
+  "author": "ФИО",
+  "version": "1.0",
+  "date": "33.10.23",
+  "hypothesis": "Гипотеза",
+  "worldSolutions": "Мировые решения - Ваши данные из JSON",
+  "rusSolutions": "Мировые решения - Ваши данные из JSON",
+  "potentialBenefits": "ВЫГОДА",
+  "technology": "Технология (УТП) - Ваши данные из JSON",
+  "additionalInformation": "Дополнительная информация - Ваши данные из JSON",
+  "surname": "123",
+  "solution": "Решение",
+  "problem": "Проблематика",
+  "ca": "Проблематика"
+}

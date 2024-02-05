@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Mulish&display=swap" rel="stylesheet" />
+    <link href="./css/main.css" rel="stylesheet" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="v1403_62">
+        <div class="v1403_59"></div>
+        <div class="v1403_63"></div>
+        <div class="v1403_64"></div>
+        <div class="v1403_65"></div>
+        <div class="name"></div>
+        <span class="v1403_67">Примеры решений (РФ)</span>
+        <div class="name"></div>
+        <div class="name"></div>
+        <div class="name"></div>
+        <div class="name"></div>
+        <div class="name"></div>
+        <span class="v1403_74">Примеры решений (мир)</span>
+        <span class="v1403_75">Потенциальная выгода ЦА</span>
+        <span class="v1403_76">Цифровые договоры (Блокчейн ЭДО)</span>
+        <div class="v1403_77"></div>
+        <span class="v1403_78">Компания:</span>
+        <div class="v1403_79"></div>
+        <span class="v1403_80">Автор:</span>
+        <div class="v1403_81"></div>
+        <div class="v1403_82"></div>
+        <span class="v1403_83">Версия:</span>
+        <span class="v1403_84">Дата:</span>
+        <span class="v1403_85">ЦА</span>
+        <span class="v1403_86">1.0</span>
+        <span class="v1403_87">31.10.23</span>
+        <span class="v1403_88">ФАМИЛИЯЧ</span>
+        <span class="v1403_112">ФАМИЛИЯЧ</span>
+        <span class="v1403_89"></span>
+        <span class="v1403_90"></span>
+        <span class="v1403_91"></span>
+        <span class="v1403_92"></span>
+        <span class="v1403_93"></span>
+        <span class="v1403_94"></span>
+        <span class="v1403_95"></span>
+        <span class="v1403_96"></span>
+        <span class="v1403_97">Проблематика</span>
+        <span class="v1403_98">Решение</span>
+        <span class="v1403_99">Технология (УТП)</span>
+        <span class="v1403_100">Альтернативные решения</span>
+        <div class="v1403_101"></div>
+        <span class="v1403_102">Гипотезы</span>
+        <div class="name"></div>
+        <div class="name"></div>
+        <div class="v1403_105"></div>
+        <div class="v1403_106"></div>
+        <div class="v1403_107"></div>
+        <div class="v1403_108"></div>
+        <div class="v1403_109"></div>
+        <div class="v1403_110"></div>
+        <span class="v1403_111"></span>
+    </div>
+
+    <script>
+        // JavaScript код для загрузки данных из JSON и заполнения соответствующих элементов на странице
+        fetch('external-data.json')
+            .then(response => response.json())
+            .then(data => {
+                document.querySelector('.v1403_89').textContent = data.potentialBenefits;
+                document.querySelector('.v1403_90').textContent = data.worldSolutions;
+                document.querySelector('.v1403_91').textContent = data.technology;
+                document.querySelector('.v1403_92').textContent = data.solution;
+                document.querySelector('.v1403_93').textContent = data.hypothesis;
+                document.querySelector('.v1403_94').textContent = data.rusSolutions;
+                document.querySelector('.v1403_95').textContent = data.ca;
+                document.querySelector('.v1403_96').textContent = data.problem;
+                document.querySelector('.v1403_111').textContent = data.additionalInformation;
+                document.querySelector('.v1403_87').textContent = data.date;
+                document.querySelector('.v1403_86').textContent = data.version;
+                document.querySelector('.v1403_88').textContent = data.author;
+                document.querySelector('.v1403_112').textContent = data.company;
+            })
+            .catch(error => console.error('Ошибка при загрузке данных: ', error));
+    </script>
+</body>
+
+</html>
